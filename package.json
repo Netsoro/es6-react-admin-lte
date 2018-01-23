@@ -1,36 +1,4 @@
 {
-  "_args": [
-    [
-      "es6-react-admin-lte@2.0.0",
-      "C:\\Users\\Admin\\WebstormProjects\\dms-frontend"
-    ]
-  ],
-  "_from": "es6-react-admin-lte@2.0.0",
-  "_id": "es6-react-admin-lte@2.0.0",
-  "_inBundle": false,
-  "_integrity": "sha512-5D+ZVz2Ii2kdVPncpP6ZMQHRGHdo4iI6FPJZ0xRYU5X9UV7xrVTzVi0v6ftN1g+uYku/Vnmc/hiJ2+hCjQWn8w==",
-  "_location": "/es6-react-admin-lte",
-  "_phantomChildren": {
-    "fbjs": "0.8.16",
-    "loose-envify": "1.3.1",
-    "object-assign": "4.1.1"
-  },
-  "_requested": {
-    "type": "version",
-    "registry": true,
-    "raw": "es6-react-admin-lte@2.0.0",
-    "name": "es6-react-admin-lte",
-    "escapedName": "es6-react-admin-lte",
-    "rawSpec": "2.0.0",
-    "saveSpec": null,
-    "fetchSpec": "2.0.0"
-  },
-  "_requiredBy": [
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/es6-react-admin-lte/-/es6-react-admin-lte-2.0.0.tgz",
-  "_spec": "2.0.0",
-  "_where": "C:\\Users\\Admin\\WebstormProjects\\dms-frontend",
   "contributors": [
     {
       "name": "Rina Bane",
