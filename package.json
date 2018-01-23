@@ -1,0 +1,106 @@
+{
+  "_args": [
+    [
+      "es6-react-admin-lte@2.0.0",
+      "C:\\Users\\Admin\\WebstormProjects\\dms-frontend"
+    ]
+  ],
+  "_from": "es6-react-admin-lte@2.0.0",
+  "_id": "es6-react-admin-lte@2.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-5D+ZVz2Ii2kdVPncpP6ZMQHRGHdo4iI6FPJZ0xRYU5X9UV7xrVTzVi0v6ftN1g+uYku/Vnmc/hiJ2+hCjQWn8w==",
+  "_location": "/es6-react-admin-lte",
+  "_phantomChildren": {
+    "fbjs": "0.8.16",
+    "loose-envify": "1.3.1",
+    "object-assign": "4.1.1"
+  },
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "es6-react-admin-lte@2.0.0",
+    "name": "es6-react-admin-lte",
+    "escapedName": "es6-react-admin-lte",
+    "rawSpec": "2.0.0",
+    "saveSpec": null,
+    "fetchSpec": "2.0.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/es6-react-admin-lte/-/es6-react-admin-lte-2.0.0.tgz",
+  "_spec": "2.0.0",
+  "_where": "C:\\Users\\Admin\\WebstormProjects\\dms-frontend",
+  "contributors": [
+    {
+      "name": "Rina Bane",
+      "email": "rina@sourcetoad.com",
+      "url": "https://sourcetoad.com/"
+    },
+    {
+      "name": "David J Eddy",
+      "email": "david@sourcetoad.com",
+      "url": "https://sourcetoad.com/"
+    }
+  ],
+  "dependencies": {
+    "admin-lte": "2.3.11",
+    "bootstrap-datepicker": "1.6.4",
+    "chart.js": "2.4.0",
+    "jquery": "3.1.1",
+    "jvectormap-next": "3.0.0",
+    "prop-types": "15.5.10",
+    "react": "15.5.0",
+    "react-dom": "15.4.2"
+  },
+  "description": "An AdminLTE Template made to use for React and ES2015-and-so-on",
+  "devDependencies": {
+    "babel-cli": "6.18.0",
+    "babel-core": "6.21.0",
+    "babel-jest": "20.0.3",
+    "babel-loader": "6.2.10",
+    "babel-plugin-add-module-exports": "0.2.1",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-react": "6.24.1",
+    "css-loader": "0.26.1",
+    "enzyme": "2.8.2",
+    "eslint": "3.19.0",
+    "eslint-config-airbnb": "14.0.0",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-jsx-a11y": "3.0.2",
+    "eslint-plugin-react": "6.9.0",
+    "extract-text-webpack-plugin": "2.0.0",
+    "file-loader": "0.10.0",
+    "http-server": "0.9.0",
+    "jest-cli": "20.0.3",
+    "node-sass": "4.5.0",
+    "react-addons-test-utils": "15.5.1",
+    "react-test-renderer": "15.5.4",
+    "sass-loader": "5.0.0",
+    "style-loader": "0.13.1",
+    "uglify-js": "2.8.27",
+    "uglifycss": "0.0.25",
+    "url-loader": "0.5.7",
+    "webpack": "^2.0.0"
+  },
+  "jest": {
+    "testRegex": "./src/tests/.*.js$",
+    "rootDir": "."
+  },
+  "license": "MIT",
+  "main": "./lib/es6-react-admin-lte.js",
+  "name": "es6-react-admin-lte",
+  "scripts": {
+    "build": "webpack --progress -ddd --display-error-details --optimize-minimize --define process.env.NODE_ENV=\"'production'\" && npm run uglyjs && npm run uglycss && npm run move-example-imgs",
+    "build-dev": "webpack --progress -ddd --display-error-details && npm run move-example-imgs",
+    "build-lib": "babel ./src/js --out-dir ./lib --source-maps --presets es2015,react --plugins babel-plugin-add-module-exports && npm run lib-jsx-relabel",
+    "lib-jsx-relabel": "find ./lib -type f -name \"*.js\" -exec sed -i '' 's/\\.jsx/\\.js/g' {} +",
+    "move-example-imgs": "cp -rf ./src/examples/img/ ./dist/examples/img",
+    "prepublish": "npm run build-lib && npm run build",
+    "start": "http-server",
+    "test": "jest --coverage",
+    "uglycss": "uglifycss ./dist/css/es6-react-admin-lte.css > ./dist/css/es6-react-admin-lte.min.css",
+    "uglyjs": "uglifyjs ./dist/js/es6-react-admin-lte.js -c -m -o ./dist/js/es6-react-admin-lte.min.js"
+  },
+  "version": "2.0.0"
+}
